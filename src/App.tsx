@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
@@ -11,6 +11,11 @@ import LayoutGeneral from "./views/layouts/LayoutGeneral/LayoutGeneral";
 import Loading from "./components/Loading/Loading";
 
 function App() {
+  useEffect(() => {
+    // set title page
+    document.title = "Curriculum Vitae - Duong Duc Trong"
+  }, []);
+
   return (
     <Router>
       <div className="App">
