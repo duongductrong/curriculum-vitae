@@ -20,28 +20,28 @@ const Navbar: FC<NavBarProps> = () => {
     <div className="navbar">
       <div className="navbar__logo">DDT</div>
       <div className="navbar__route">
-        <Link className="navbar__route__link" to="/cv/">
+        <Link className="navbar__route__link" to="/curriculum-vitae/">
           <Icon
             className="navbar__route__link__icon"
             size={30}
             icon={ic_home}
           />
         </Link>
-        <Link className="navbar__route__link" to="/cv/about">
+        <Link className="navbar__route__link" to="/curriculum-vitae/about">
           <Icon
             className="navbar__route__link__icon"
             size={30}
             icon={ic_person_outline}
           />
         </Link>
-        <Link className="navbar__route__link" to="/cv/skills">
+        <Link className="navbar__route__link" to="/curriculum-vitae/skills">
           <Icon
             className="navbar__route__link__icon"
             size={30}
             icon={ic_settings}
           />
         </Link>
-        <Link className="navbar__route__link" to="/cv/project">
+        <Link className="navbar__route__link" to="/curriculum-vitae/project">
           <Icon
             className="navbar__route__link__icon"
             size={30}
@@ -49,7 +49,7 @@ const Navbar: FC<NavBarProps> = () => {
           />
         </Link>
 
-        <Link className="navbar__route__link" to="/cv/contact">
+        <Link className="navbar__route__link" to="/curriculum-vitae/contact">
           <Icon
             className="navbar__route__link__icon"
             size={30}

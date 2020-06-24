@@ -6,25 +6,25 @@ import ErrorPage from "./views/pages/Error404/Error404";
 const SwitchRoutes: FC = () => {
   return (
     <Switch>
-      <Route path="/" exact render={() => <Redirect to="/cv" />} />
+      <Route path="/" exact render={() => <Redirect to="/curriculum-vitae" />} />
       <Route
-        path="/cv"
+        path="/curriculum-vitae"
         component={lazy(() => import("./views/pages/Home/Home"))}
         exact={true}
       />
       <Route
-        path="/cv/about"
+        path="/curriculum-vitae/about"
         component={lazy(() => import("./views/pages/About/About"))}
       />
       <Route
-        path="/cv/skills"
+        path="/curriculum-vitae/skills"
         component={lazy(() => import("./views/pages/Skills/Skills"))}
       />
       <Route
-        path="/cv/project"
+        path="/curriculum-vitae/project"
         component={lazy(() => import("./views/pages/Portfolio/Portfolio"))}
       />
-      <Route path="/cv/contact"
+      <Route path="/curriculum-vitae/contact"
       component={lazy(() => import("./views/pages/Contact/Contact")) } />
 
       <Route path="*" component={ErrorPage} />
