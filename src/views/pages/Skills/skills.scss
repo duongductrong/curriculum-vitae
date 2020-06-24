@@ -1,0 +1,55 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // overflow: hidden;
+
+  height: 100vh;
+  width: 100%;
+
+  &__left {
+    text-align: left;
+    flex: 0.9 0 50%;
+    &__title {
+      letter-spacing: 3px;
+
+      animation: fromLeft 2.3s;
+    }
+
+    &__description {
+      animation: fromBottom 2.5s;
+    }
+  }
+  &__right {
+    text-align: left;
+    flex: 1 0 50%;
+
+    &__language {
+      animation: fromTop 0.8s;
+    }
+
+    &__other {
+      animation: fromBottom 0.8s;
+    }
+
+    &__box {
+      display: flex;
+      &__skill {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__show {
+    &__lb {
+      font-weight: bold;
+      display: block;
+      margin: 15px 0 5px;
+    }
+  }
+
+  &--flarge {
+    font-size: 60px;
+  }
+}

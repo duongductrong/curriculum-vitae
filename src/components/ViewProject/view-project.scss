@@ -1,0 +1,81 @@
+@import "../../assets/scss/variables.scss";
+
+.view-project {
+  max-width: 100%;
+  height: 300px;
+
+  position: relative;
+
+  &__box {
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    overflow: hidden;
+  }
+
+  &__source {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+
+    transition: all 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__name {
+    display: block;
+    color: $dark;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    padding: 5px 10px;
+    background-color: white;
+    margin: auto;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    font-size: larger;
+  }
+
+  &__view {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    text-decoration: none;
+  }
+
+  &:hover {
+    .view-project__source {
+      transform: scale(1.2);
+    }
+
+    .view-project__name {
+      opacity: 0;
+    }
+
+    .view-project__view {
+      opacity: 1;
+      color: $text-dark;
+      padding: 8px 20px;
+      background-color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      box-shadow: 5px 5px $text-dark, 10px 10px $text-green;
+
+      transition: box-shadow 0.3s linear;
+
+      &:hover {
+        box-shadow: 15px 15px $text-green, 25px 25px $text-dark;
+      }
+    }
+  }
+}

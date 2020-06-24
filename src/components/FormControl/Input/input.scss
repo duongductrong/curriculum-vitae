@@ -1,0 +1,17 @@
+@import "../../../assets/scss/variables.scss";
+
+.form-control {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: rgba($color: $text-dark, $alpha: 0.5);
+    color: white;
+    border: 3px solid transparent;
+    outline: 0;
+
+    transition: border-bottom 0.3s ease;
+
+    &:focus {
+        border-bottom: 3px solid $text-green;
+    }
+}

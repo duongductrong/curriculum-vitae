@@ -1,0 +1,36 @@
+@import "../../../assets/scss/variables.scss";
+
+
+.contact {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100vh;
+
+    &__box {
+        flex: 1 0 50%;
+    }
+
+    &__images {
+        flex: 1 0 50%;
+    }
+
+    &__entry {
+        margin-bottom: 15px;
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__control {
+        box-shadow: 5px 5px $text-dark, 10px 10px $text-green;
+    }
+
+    &__btn {
+        margin-top: 25px;
+    }
+}

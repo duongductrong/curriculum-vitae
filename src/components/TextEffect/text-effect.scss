@@ -1,0 +1,24 @@
+@import "../../assets/scss/variables.scss";
+
+.text-effect {
+  cursor: default;
+  display: inline-block;
+  &:hover {
+    color: $text-green;
+    transition: 0.3s;
+    animation: bouncing linear 0.5s;
+  }
+
+  &--green {
+    color: $text-green;
+  }
+}
+
+@keyframes bouncing {
+  from {
+    transform: translateX(-15%) scale(1.2);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

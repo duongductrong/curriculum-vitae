@@ -1,0 +1,21 @@
+@import "../../assets/scss/variables.scss";
+
+.spinner-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: medium solid white;
+
+  box-shadow: 5px 5px $text-dark, 10px 10px $text-green;
+
+  transition: box-shadow linear 0.5s;
+  
+  &:hover {
+    box-shadow: 0 0 transparent;
+  }
+}

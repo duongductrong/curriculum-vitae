@@ -1,0 +1,55 @@
+@import "../../../assets/scss/variables.scss";
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  text-align: left;
+  color: $text-green;
+  // overflow: hidden;
+
+  &__left {
+    flex: 0.9;
+
+    &__title {
+      letter-spacing: 3px;
+    }
+
+    &__description {
+      color: white;
+      font-style: italic;
+
+    }
+
+    &__contributions-git {
+      background-color: white;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  }
+  &__right {
+    text-align: center;
+    flex: 1;
+
+    &__avatar {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+
+      border: 5px solid white;
+      box-shadow: 2px 2px 5px $text-dark, 15px 15px $text-green, 30px 30px white;
+
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 15px * 2 15px * 2 $text-green, 30px * 2 30px * 2 white;
+      }
+    }
+  }
+
+  &--flarge {
+    font-size: 60px;
+  }
+}

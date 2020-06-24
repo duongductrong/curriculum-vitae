@@ -1,0 +1,25 @@
+@import "../../../assets/scss/variables.scss";
+
+.error-404 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  &__title {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-shadow: -50px -50px $text-dark, 50px 50px $text-green;
+    font-size: 7rem;
+
+    
+  }
+
+  &__prev {
+      position: fixed;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}

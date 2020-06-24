@@ -1,0 +1,9 @@
+.portfolio-view {
+    display: flex;
+    flex-wrap: wrap;
+    // overflow: hidden;
+
+    &--3 {
+        flex: 0 0 8.3333% * 3;
+    }
+}

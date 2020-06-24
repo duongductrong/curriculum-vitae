@@ -1,0 +1,38 @@
+@import "../../assets/scss/variables.scss";
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba($color: $dark, $alpha: 0.5);
+  z-index: 15;
+
+  &__box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    small {
+        font-weight: bold;
+        font-style: italic;
+    }
+  }
+
+  &__logo {
+    span {
+      text-shadow: 10px 10px $text-dark, 15px 15px $text-green;
+    }
+  }
+  &__progress-bar {
+    margin: 15px auto 0;
+    max-width: 400px !important;
+    border-width: 1px !important;
+    & .progress__running {
+      padding: 3px !important;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../assets/scss/variables.scss";
+
+.progress {
+  width: 100%;
+  background-color: $text-dark;
+  border-radius: 25px;
+  border: 5px solid rgba($color: $text-dark, $alpha: 0.6);
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  &__running {
+      transition: all 0.3s;
+    // width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background-image: linear-gradient(
+      45deg,
+      rgba($color: white, $alpha: 0.5) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba($color: white, $alpha: 0.5) 50%,
+      rgba($color: white, $alpha: 0.5) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 1rem 1rem;
+    background-color: rgba($color: $text-green, $alpha: 0.8);
+    color: $text-dark;
+    font-weight: bold;
+
+    animation: runningProgress 10s linear infinite;
+  }
+}
+
+@keyframes runningProgress {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}

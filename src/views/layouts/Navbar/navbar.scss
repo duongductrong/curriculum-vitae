@@ -1,0 +1,52 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/animation.scss";
+
+.navbar {
+  background: $dark;
+  color: $text-dark;
+  padding: 8px;
+  height: 98.4vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    text-align: center;
+
+    animation: fromBottom 1s;
+  }
+
+  &__route {
+    &__link {
+      margin: 25px 0;
+      display: block;
+      color: $text-dark;
+
+      &:nth-child(1) { animation: fromLeft 1.2s; }
+      &:nth-child(2) { animation: fromLeft 1.4s; }
+      &:nth-child(3) { animation: fromLeft 1.6s; }
+      &:nth-child(4) { animation: fromLeft 1.8s; }
+      &:nth-child(5) { animation: fromLeft 2s; }
+
+      &:hover {
+        color: $text-green;
+      }
+
+      &__icon {
+      }
+    }
+  }
+
+  &__network {
+    &__brand {
+      display: block;
+      color: $text-dark;
+      margin-bottom: 18px;
+
+      animation: fromBottom 2.2s;
+    }
+  }
+}
