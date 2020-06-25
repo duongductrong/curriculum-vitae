@@ -25,16 +25,16 @@ function App() {
         <LayoutGeneral left={<Navbar />}>
           <Suspense fallback={<Loading />}>
             <SwitchRoutes />
+
+            <div className="App-cv">
+              <a href="https://www.topcv.vn/download-cv?cv_id=deca51a3d9a09bfd4f9adbddd8650b1a&t=1593051138">
+                <Button style={{ padding: "10px 15px" }}>
+                  Download CV <Icon icon={ic_file_download} />
+                </Button>
+              </a>
+            </div>
           </Suspense>
         </LayoutGeneral>
-
-        <div className="App-cv">
-          <a href="https://www.topcv.vn/download-cv?cv_id=deca51a3d9a09bfd4f9adbddd8650b1a&t=1593051138">
-            <Button style={{ padding: "10px 15px" }}>
-              Download CV <Icon icon={ic_file_download} />
-            </Button>
-          </a>
-        </div>
 
         <ToastContainer />
       </div>
