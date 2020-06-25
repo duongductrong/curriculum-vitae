@@ -52,7 +52,7 @@ const Home: FC = () => {
         </span>
 
         <div className="home__contacts">
-          <Link to="/contact">
+          <Link to="/curriculum-vitae/contact">
             <Button id="contact-me-btn" component="button">Contact me</Button>
           </Link>
         </div>
