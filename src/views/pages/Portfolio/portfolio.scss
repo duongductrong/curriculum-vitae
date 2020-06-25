@@ -1,9 +1,25 @@
 .portfolio-view {
-    display: flex;
-    flex-wrap: wrap;
-    // overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  // overflow: hidden;
 
-    &--3 {
-        flex: 0 0 8.3333% * 3;
+  &--3 {
+    flex: 0 0 8.3333% * 3;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+    .portfolio-view {
+        &--3 {
+            flex: 0 0 8.3333% * 6;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .portfolio-view {
+        &--3 {
+            flex: 0 0 8.3333% * 12;
+        }
     }
 }

@@ -53,3 +53,15 @@
     font-size: 60px;
   }
 }
+
+
+@media screen and (max-width: 1160px) {
+  .skills {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .skills__right__box {
+    margin-bottom: 50px;
+  }
+}

@@ -53,3 +53,39 @@
     font-size: 60px;
   }
 }
+
+
+@media screen and (max-width: 1160px) {
+  .about {
+    display: block;
+    text-align: center;
+
+    #contribution-git {
+      margin-top: 30px;
+    }
+
+    &__right {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__left__title {
+    font-size: 45px;
+  }
+  .about__left__description {
+    font-size: 14px;
+  }
+
+  #contribution-git {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__right__avatar {
+    width: 240px;
+    height: 240px;
+  }
+}

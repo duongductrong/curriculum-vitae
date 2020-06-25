@@ -66,12 +66,33 @@
   }
 }
 
+// media responsive
 
-// @media (max-width: 964px) {
-//   .home__description {
-//     flex: 0 0 100%;
-//   }
-//   .home__banners {
-//     flex: 0 0 100%;
-//   }
-// }
+@media screen and (max-width: 1160px) {
+  .home {
+    display: block;
+    text-align: center;
+
+    &__description {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home__banners__intro {
+    font-size: 45px;
+  }
+  .home__description__text {
+    font-size: 170px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .home__banners__intro {
+    font-size: 40px;
+  }
+  .home__description__text {
+    font-size: 150px;
+  }
+}
