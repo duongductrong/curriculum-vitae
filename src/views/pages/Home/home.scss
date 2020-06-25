@@ -70,8 +70,13 @@
 
 @media screen and (max-width: 1160px) {
   .home {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+
+    .home__banners {
+      margin-top: 30px;
+    }
 
     &__description {
       margin-top: 25px;
