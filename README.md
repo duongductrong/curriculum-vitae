@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## You can see demo here
+
+![DEMO](./src/assets/images/demo.gif)
+
+## How to download this project ?
+
+- **Step 1**: Open this repository and `git clone https://github.com/duongductrong/curriculum-vitae`
+- **Step 2**: After you'll download this source, press `cd curriculum-vitae`
+- **Step 3**: Press `npm install`
+- **Step 4**: To start this source, press `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
