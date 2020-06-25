@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a0545c9ba7902e728984e126dd58434",
+    "revision": "88bdae5ff28a0bd82e014f015ce96b02",
     "url": "/curriculum-vitae/index.html"
   },
   {
@@ -8,28 +8,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/curriculum-vitae/static/css/2.d34346ea.chunk.css"
   },
   {
-    "revision": "4a4aeefd5cacba8e3a5a",
-    "url": "/curriculum-vitae/static/css/3.ae930102.chunk.css"
+    "revision": "9d14f5477fe8d10640de",
+    "url": "/curriculum-vitae/static/css/3.3af595e0.chunk.css"
   },
   {
-    "revision": "43ff308c19aadad5fac5",
-    "url": "/curriculum-vitae/static/css/4.f4e2b73c.chunk.css"
+    "revision": "affbede976ee30be2f61",
+    "url": "/curriculum-vitae/static/css/4.e11748b1.chunk.css"
   },
   {
-    "revision": "30ca0b13dbaed98e2380",
-    "url": "/curriculum-vitae/static/css/5.f60dee4d.chunk.css"
+    "revision": "96893bff2aa483d70d7c",
+    "url": "/curriculum-vitae/static/css/5.78948038.chunk.css"
   },
   {
-    "revision": "c3e7767d423f8348d180",
-    "url": "/curriculum-vitae/static/css/6.531b9613.chunk.css"
+    "revision": "a2a3dc7165b46988f581",
+    "url": "/curriculum-vitae/static/css/6.4a361ebd.chunk.css"
   },
   {
-    "revision": "02b74d142ad1bf3d101b",
-    "url": "/curriculum-vitae/static/css/7.ac4d9986.chunk.css"
+    "revision": "db9a19127bedcf26bb57",
+    "url": "/curriculum-vitae/static/css/7.09ed1bbc.chunk.css"
   },
   {
-    "revision": "9b17cfd89fb94b54c4fd",
-    "url": "/curriculum-vitae/static/css/main.c55ea266.chunk.css"
+    "revision": "c5b3a55e50b1b57ed5e0",
+    "url": "/curriculum-vitae/static/css/main.ba153fa7.chunk.css"
   },
   {
     "revision": "506c52fc683314ca94b7",
@@ -40,32 +40,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/curriculum-vitae/static/js/2.f5a9e9a3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a4aeefd5cacba8e3a5a",
+    "revision": "9d14f5477fe8d10640de",
     "url": "/curriculum-vitae/static/js/3.520063b0.chunk.js"
   },
   {
-    "revision": "43ff308c19aadad5fac5",
+    "revision": "affbede976ee30be2f61",
     "url": "/curriculum-vitae/static/js/4.fed54527.chunk.js"
   },
   {
-    "revision": "30ca0b13dbaed98e2380",
+    "revision": "96893bff2aa483d70d7c",
     "url": "/curriculum-vitae/static/js/5.c7e5bfe5.chunk.js"
   },
   {
-    "revision": "c3e7767d423f8348d180",
+    "revision": "a2a3dc7165b46988f581",
     "url": "/curriculum-vitae/static/js/6.c879828e.chunk.js"
   },
   {
-    "revision": "02b74d142ad1bf3d101b",
+    "revision": "db9a19127bedcf26bb57",
     "url": "/curriculum-vitae/static/js/7.18350091.chunk.js"
   },
   {
-    "revision": "9b17cfd89fb94b54c4fd",
+    "revision": "c5b3a55e50b1b57ed5e0",
     "url": "/curriculum-vitae/static/js/main.6acdf401.chunk.js"
   },
   {
-    "revision": "29ba02285508e3af7a64",
-    "url": "/curriculum-vitae/static/js/runtime-main.0f344c98.js"
+    "revision": "4fcf1b069629c755e444",
+    "url": "/curriculum-vitae/static/js/runtime-main.238df21b.js"
   },
   {
     "revision": "2030b1d00e85414f655f1182571e5cb2",
