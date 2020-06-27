@@ -27,7 +27,7 @@ function App() {
             <SwitchRoutes />
 
             <div className="App-cv">
-              <a href="https://www.topcv.vn/download-cv?cv_id=deca51a3d9a09bfd4f9adbddd8650b1a&t=1593051138">
+              <a href="https://www.topcv.vn/download-cv?cv_id=deca51a3d9a09bfd4f9adbddd8650b1a&t=1593280690">
                 <Button style={{ padding: "10px 15px" }}>
                   Download CV <Icon icon={ic_file_download} />
                 </Button>
