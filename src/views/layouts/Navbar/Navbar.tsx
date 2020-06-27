@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { Icon } from "react-icons-kit";
 import { Link } from "react-router-dom";
 import { ic_home } from "react-icons-kit/md/ic_home";
@@ -13,49 +13,55 @@ import { socialGithub } from "react-icons-kit/typicons/socialGithub";
 
 import "./navbar.scss";
 
+const storage_active = "navbar_acitve";
+
+const navbarItems = [
+  { id: "home", path: "/curriculum-vitae/", icon: ic_home },
+  { id: "about", path: "/curriculum-vitae/about", icon: ic_person_outline },
+  { id: "skills", path: "/curriculum-vitae/skills", icon: ic_settings },
+  { id: "project", path: "/curriculum-vitae/project", icon: ic_remove_red_eye },
+  { id: "contact", path: "/curriculum-vitae/contact", icon: ic_mail },
+];
+
 export interface NavBarProps {}
 
 const Navbar: FC<NavBarProps> = () => {
+  const [navActive, setNavActive] = useState(() =>
+    localStorage.getItem(storage_active)
+      ? localStorage.getItem(storage_active)
+      : navbarItems[0].id
+  );
+
+  const onHandleActive = (itemActive: string) => () => {
+    // change state
+    setNavActive(itemActive);
+
+    // save active item
+    window.localStorage.setItem(storage_active, itemActive);
+  };
+
+  console.log(navActive);
+
   return (
     <div className="navbar">
       <div className="navbar__logo">DDT</div>
       <div className="navbar__route">
-        <Link className="navbar__route__link" to="/curriculum-vitae/">
-          <Icon
-            className="navbar__route__link__icon"
-            size={30}
-            icon={ic_home}
-          />
-        </Link>
-        <Link className="navbar__route__link" to="/curriculum-vitae/about">
-          <Icon
-            className="navbar__route__link__icon"
-            size={30}
-            icon={ic_person_outline}
-          />
-        </Link>
-        <Link className="navbar__route__link" to="/curriculum-vitae/skills">
-          <Icon
-            className="navbar__route__link__icon"
-            size={30}
-            icon={ic_settings}
-          />
-        </Link>
-        <Link className="navbar__route__link" to="/curriculum-vitae/project">
-          <Icon
-            className="navbar__route__link__icon"
-            size={30}
-            icon={ic_remove_red_eye}
-          />
-        </Link>
-
-        <Link className="navbar__route__link" to="/curriculum-vitae/contact">
-          <Icon
-            className="navbar__route__link__icon"
-            size={30}
-            icon={ic_mail}
-          />
-        </Link>
+        {navbarItems.map((navbar) => (
+          <Link
+            key={navbar.id}
+            className={`navbar__route__link${
+              navActive === navbar.id ? ` navbar--active` : ""
+            }`}
+            to={navbar.path}
+            onClick={onHandleActive(navbar.id)}
+          >
+            <Icon
+              className="navbar__route__link__icon"
+              size={30}
+              icon={navbar.icon}
+            />
+          </Link>
+        ))}
       </div>
       <div className="navbar__network">
         <a
