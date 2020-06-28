@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { Icon } from "react-icons-kit";
 import { Link } from "react-router-dom";
 import { ic_home } from "react-icons-kit/md/ic_home";
@@ -26,11 +26,16 @@ const navbarItems = [
 export interface NavBarProps {}
 
 const Navbar: FC<NavBarProps> = () => {
-  const [navActive, setNavActive] = useState(() =>
-    localStorage.getItem(storage_active)
-      ? localStorage.getItem(storage_active)
-      : navbarItems[0].id
-  );
+  const [navActive, setNavActive] = useState(() => {
+    const index = navbarItems.findIndex(
+      // find lists and return match with pathname
+      (nav) => nav.id === window.location.pathname.split("/")[2] ||  nav.id === window.location.pathname.split("/")[1]
+    );
+
+    return navbarItems[index]?.id || navbarItems[0].id;
+  });
+
+  // console.log(navbarItems.findIndex((nav) => nav.id === window.location.pathname.split("/")[2]));
 
   const onHandleActive = (itemActive: string) => () => {
     // change state
@@ -39,8 +44,6 @@ const Navbar: FC<NavBarProps> = () => {
     // save active item
     window.localStorage.setItem(storage_active, itemActive);
   };
-
-  console.log(navActive);
 
   return (
     <div className="navbar">
