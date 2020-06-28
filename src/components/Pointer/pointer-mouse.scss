@@ -1,0 +1,9 @@
+@import "../../assets/scss/variables.scss";
+
+.pointer-mouse {
+  z-index: 1;
+  position: absolute;
+  background: rgba($color: $secondary, $alpha: 0.4);
+  border-radius: 50%;
+  transition: 100ms;
+}

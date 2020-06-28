@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import "./App.scss";
@@ -12,6 +12,7 @@ import Loading from "./components/Loading/Loading";
 import Button from "./components/Button/Button";
 import Icon from "react-icons-kit";
 import { ic_file_download } from "react-icons-kit/md/ic_file_download";
+import PointerMouse from "./components/Pointer/PointerMouse";
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
 
         <ToastContainer />
       </div>
+      <PointerMouse width={30} height={30} />
     </Router>
   );
 }
