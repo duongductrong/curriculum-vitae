@@ -13,6 +13,7 @@ import Button from "./components/Button/Button";
 import Icon from "react-icons-kit";
 import { ic_file_download } from "react-icons-kit/md/ic_file_download";
 import PointerMouse from "./components/Pointer/PointerMouse";
+import apiService from "./core/services/api.service";
 
 function App() {
   useEffect(() => {

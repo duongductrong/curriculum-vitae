@@ -6,22 +6,12 @@
  */
 
 import axios from "axios";
-import jwtService from "./jwt.service";
 import toast from "../configs/toast.config";
 
 import { NoticeClient } from "./types/types";
+import axiosClient from "./axiosClient";
 
 class ApiService {
-
-    httpHeadersConfig: Object | any | null | undefined;
-
-    constructor() {
-        this.httpHeadersConfig = {
-            headers: {
-                Authorization: `BEARER ${jwtService.getToken()}`
-            }
-        };
-    }
 
     /**
      * Get request
@@ -31,10 +21,9 @@ class ApiService {
      */
     get(url: string, notice: NoticeClient = { success: false, error: false }, { ...config } = {} = {}) {
         return new Promise((resolve, reject) => {
-            return axios({
+            return axiosClient({
                 url: url,
-                ...config,
-                ...this.httpHeadersConfig
+                ...config
             })
                 .then(response => {
                     if (notice.success) this.process({ type: "success", text: "The proccess successfully" });
@@ -61,8 +50,7 @@ class ApiService {
             return axios({
                 url: url,
                 data: { ...data },
-                ...config,
-                ...this.httpHeadersConfig
+                ...config
             })
                 .then(response => {
                     if (notice) this.process({ type: "success", text: "The proccess successfully" });
@@ -88,8 +76,7 @@ class ApiService {
             return axios({
                 url,
                 data: { ...data },
-                ...config,
-                ...this.httpHeadersConfig
+                ...config
             })
                 .then(response => {
                     if (notice) this.process({ type: "success", text: "The proccess successfully" });
@@ -115,8 +102,7 @@ class ApiService {
             return axios({
                 url,
                 data: { ...data },
-                ...config,
-                ...this.httpHeadersConfig
+                ...config
             })
                 .then(response => {
                     if (notice) this.process({ type: "success", text: "The proccess successfully" });
@@ -142,8 +128,7 @@ class ApiService {
             return axios({
                 url,
                 data: { ...data },
-                ...config,
-                ...this.httpHeadersConfig
+                ...config
             })
                 .then(response => {
                     if (notice) this.process({ type: "success", text: "The proccess successfully" });
